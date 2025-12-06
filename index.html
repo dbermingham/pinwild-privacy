@@ -6,15 +6,29 @@
     <title>Pinwild - Wildlife & Lost Pet Tracking</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; }
-        header { background-color: #2e7d32; color: white; padding: 60px 20px; text-align: center; }
+        
+        /* Updated Header Styles for Logo */
+        header { background-color: #2e7d32; color: white; padding: 40px 20px; text-align: center; }
+        
+        .logo-img { 
+            width: 120px; 
+            height: 120px; 
+            border-radius: 20px; /* Rounds the corners like an app icon */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+
         h1 { margin: 0; font-size: 3em; }
         .tagline { font-size: 1.5em; margin-top: 10px; opacity: 0.9; }
-        .btn { display: inline-block; background-color: white; color: #2e7d32; padding: 15px 30px; border-radius: 30px; text-decoration: none; font-weight: bold; margin-top: 30px; font-size: 1.2em; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .btn:hover { background-color: #f0f0f0; }
+        
+        .btn { display: inline-block; background-color: white; color: #2e7d32; padding: 15px 30px; border-radius: 30px; text-decoration: none; font-weight: bold; margin-top: 30px; font-size: 1.2em; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s; }
+        .btn:hover { background-color: #f0f0f0; transform: scale(1.05); }
+        
         .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; text-align: center; }
         .features { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 40px; }
         .feature-card { flex: 1; min-width: 250px; padding: 20px; background: #f9f9f9; border-radius: 10px; }
         .feature-icon { font-size: 2em; margin-bottom: 10px; display: block; }
+        
         footer { background: #333; color: white; padding: 20px; text-align: center; margin-top: 50px; }
         footer a { color: #ccc; text-decoration: none; margin: 0 10px; }
         footer a:hover { color: white; }
@@ -23,12 +37,16 @@
 <body>
 
 <header>
+    <!-- ✅ THIS IS THE LOGO (Make sure you uploaded 'logo.png') -->
+    <img src="logo.png" alt="Pinwild App Icon" class="logo-img">
+    
     <h1>Pinwild</h1>
     <p class="tagline">The neighborhood watch for nature.</p>
     <p>Track wildlife sightings and find lost pets in real-time.</p>
     
-    <!-- REPLACE THIS LINK WITH YOUR ACTUAL PLAY STORE LINK -->
-    <a href="https://play.google.com/store/apps/details?id=com.dustin.pinwild" class="btn">
+    <!-- ✅ THIS IS THE LINK -->
+    <!-- Ensure 'id' matches your package name exactly -->
+    <a href="https://play.google.com/store/apps/details?id=com.pinwildapp.app" class="btn">
         Download on Android
     </a>
 </header>
@@ -59,7 +77,6 @@
 <footer>
     <p>&copy; 2025 Pinwild. All rights reserved.</p>
     <br>
-    <!-- These links point to the separate files in your repository -->
     <a href="privacy.html">Privacy Policy</a> | 
     <a href="terms.html">Terms of Service</a> | 
     <a href="safety.html">Safety Standards</a>
