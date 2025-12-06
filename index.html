@@ -7,22 +7,34 @@
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; }
         
-        /* Updated Header Styles for Logo */
-        header { background-color: #2e7d32; color: white; padding: 40px 20px; text-align: center; }
+        /* ✅ NEW HERO HEADER STYLE */
+        header { 
+            /* This adds a 50% dark tint so white text is readable on any photo */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('pinwildheader.png');
+            
+            /* This makes the image cover the whole box without squishing */
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat;
+            
+            color: white; 
+            padding: 100px 20px; /* Taller padding makes it look cinematic */
+            text-align: center; 
+        }
         
         .logo-img { 
             width: 120px; 
             height: 120px; 
             border-radius: 20px; 
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
             margin-bottom: 20px;
         }
 
-        h1 { margin: 0; font-size: 3em; }
-        .tagline { font-size: 1.5em; margin-top: 10px; opacity: 0.9; }
+        h1 { margin: 0; font-size: 3.5em; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .tagline { font-size: 1.5em; margin-top: 10px; opacity: 0.95; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); }
         
-        .btn { display: inline-block; background-color: white; color: #2e7d32; padding: 15px 30px; border-radius: 30px; text-decoration: none; font-weight: bold; margin-top: 30px; font-size: 1.2em; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s; }
-        .btn:hover { background-color: #f0f0f0; transform: scale(1.05); }
+        .btn { display: inline-block; background-color: #2e7d32; color: white; padding: 15px 30px; border-radius: 30px; text-decoration: none; font-weight: bold; margin-top: 30px; font-size: 1.2em; box-shadow: 0 4px 6px rgba(0,0,0,0.3); transition: transform 0.2s; border: 2px solid white; }
+        .btn:hover { background-color: #1b5e20; transform: scale(1.05); }
         
         .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; text-align: center; }
         .features { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 40px; }
@@ -37,14 +49,14 @@
 <body>
 
 <header>
-    <!-- Make sure you uploaded 'logo.png' to GitHub -->
+    <!-- Logo (Make sure logo.png is uploaded) -->
     <img src="logo.png" alt="Pinwild App Icon" class="logo-img">
     
     <h1>Pinwild</h1>
     <p class="tagline">The neighborhood watch for nature.</p>
-    <p>Track wildlife sightings and find lost pets in real-time.</p>
+    <p style="font-size: 1.2em; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">Track wildlife sightings and find lost pets in real-time.</p>
     
-    <!-- Link to your app package -->
+    <!-- Link to your app -->
     <a href="https://play.google.com/store/apps/details?id=com.pinwildapp.app" class="btn">
         Download on Android
     </a>
@@ -56,7 +68,6 @@
 
     <div class="features">
         <div class="feature-card">
-            <!-- ✅ CHANGED TO MOUNTAIN LION (LION FACE) -->
             <span class="feature-icon">🦁</span>
             <h3>Wildlife Tracking</h3>
             <p>See where mountain lions, bears, and other wildlife have been spotted recently.</p>
@@ -69,7 +80,7 @@
         <div class="feature-card">
             <span class="feature-icon">🔔</span>
             <h3>Custom Alerts</h3>
-            <p>Get notified instantly when something is spotted within the chosen radius of your home - from 1 to 50 miles.</p>
+            <p>Get notified instantly when something is spotted within 5 miles of your home.</p>
         </div>
     </div>
 </div>
