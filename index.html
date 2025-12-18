@@ -3,48 +3,73 @@
 <head>
     <meta charset="UTF-8">
     
-    <!-- ✅ FIXED: Added '?v=2' to force the browser to reload the icon -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?v=2">
+    <!-- Forces browser to clear cache for favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=3">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?v=3">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pinwild - Wildlife & Lost Pet Tracking</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; }
         
+        /* ✅ FIXED HEADER: Professional Gradient instead of busy image */
         header { 
-            /* Make sure 'pinsheaderf.png' is uploaded to GitHub exactly like this */
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('pinsheaderf.png');
-            background-size: cover; 
-            background-position: center; 
-            background-repeat: no-repeat;
+            background: linear-gradient(135deg, #1b5e20 0%, #43a047 100%);
             color: white; 
-            padding: 100px 20px;
+            padding: 60px 20px 80px 20px; /* Extra padding at bottom for the image overlap */
             text-align: center; 
         }
         
         .logo-img { 
-            width: 120px; 
-            height: 120px; 
+            width: 100px; 
+            height: 100px; 
             border-radius: 20px; 
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
             margin-bottom: 20px;
         }
 
-        h1 { margin: 0; font-size: 3.5em; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
-        .tagline { font-size: 1.5em; margin-top: 10px; opacity: 0.95; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); }
+        h1 { margin: 0; font-size: 3em; font-weight: 800; letter-spacing: -1px; }
+        .tagline { font-size: 1.5em; margin-top: 10px; opacity: 0.95; font-weight: 300; }
         
-        .btn { display: inline-block; background-color: #2e7d32; color: white; padding: 15px 30px; border-radius: 30px; text-decoration: none; font-weight: bold; margin-top: 30px; font-size: 1.2em; box-shadow: 0 4px 6px rgba(0,0,0,0.3); transition: transform 0.2s; border: 2px solid white; }
-        .btn:hover { background-color: #1b5e20; transform: scale(1.05); }
+        .btn { 
+            display: inline-block; 
+            background-color: white; 
+            color: #2e7d32; 
+            padding: 15px 35px; 
+            border-radius: 50px; 
+            text-decoration: none; 
+            font-weight: 800; 
+            margin-top: 30px; 
+            margin-bottom: 40px;
+            font-size: 1.2em; 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
+            transition: transform 0.2s, box-shadow 0.2s; 
+        }
+        .btn:hover { 
+            background-color: #f1f8e9; 
+            transform: translateY(-2px); 
+            box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+        }
         
-        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; text-align: center; }
+        /* ✅ NEW CLASS: Handles the phone image */
+        .showcase-img {
+            max-width: 100%;
+            width: 900px; /* Constrains it on large screens */
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3); /* Gives it a "Pop" 3D effect */
+            display: block;
+            margin: 0 auto; /* Centers it */
+        }
+
+        .container { max-width: 1000px; margin: 0 auto; padding: 60px 20px; text-align: center; }
         .features { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 40px; }
-        .feature-card { flex: 1; min-width: 250px; padding: 20px; background: #f9f9f9; border-radius: 10px; }
-        .feature-icon { font-size: 2em; margin-bottom: 10px; display: block; }
+        .feature-card { flex: 1; min-width: 250px; padding: 30px; background: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border: 1px solid #eee;}
+        .feature-icon { font-size: 3em; margin-bottom: 15px; display: block; }
         
-        footer { background: #333; color: white; padding: 20px; text-align: center; margin-top: 50px; }
+        footer { background: #1a1a1a; color: #888; padding: 40px 20px; text-align: center; margin-top: 50px; font-size: 0.9em; }
         footer a { color: #ccc; text-decoration: none; margin: 0 10px; }
-        footer a:hover { color: white; }
+        footer a:hover { color: white; text-decoration: underline; }
     </style>
 </head>
 <body>
@@ -55,33 +80,41 @@
     
     <h1>Pinwild</h1>
     <p class="tagline">The neighborhood watch for nature.</p>
-    <p style="font-size: 1.2em; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">Track wildlife sightings and find lost pets in real-time.</p>
+    <p style="font-size: 1.2em; opacity: 0.9; margin-top: 5px;">Track wildlife sightings and find lost pets in real-time.</p>
     
     <!-- Link to your app -->
     <a href="https://play.google.com/store/apps/details?id=com.pinwildapp.app" class="btn">
         Download on Android
     </a>
+
+    <!-- ✅ THE IMAGE IS NOW HERE (Product Showcase) -->
+    <!-- It sits nicely below the button, not behind the text -->
+    <img src="pinsheaderf.png" alt="Pinwild App Screenshots" class="showcase-img">
+
 </header>
 
 <div class="container">
     <h2>Know what's in your backyard.</h2>
-    <p>Pinwild helps keep you, your pets and your livestock safe and helps you look out for your neighbors. Set your home base, choose your radius, and get instant alerts.</p>
+    <p style="font-size: 1.1em; color: #555; max-width: 700px; margin: 0 auto;">
+        Pinwild helps keep you, your pets, and your livestock safe while helping you look out for your neighbors. 
+        Set your home base, choose your radius, and get instant alerts.
+    </p>
 
     <div class="features">
         <div class="feature-card">
             <span class="feature-icon">🦁</span>
             <h3>Wildlife Tracking</h3>
-            <p>See where mountain lions, bears, birds and other wildlife have been spotted recently and know if they are a threat or not.</p>
+            <p>See where mountain lions, bears, and other wildlife have been spotted recently. Know instantly if they are a threat.</p>
         </div>
         <div class="feature-card">
             <span class="feature-icon">🐕</span>
             <h3>Lost & Found Pets</h3>
-            <p>Help reunite pets with their owners by posting sightings with photos and location.</p>
+            <p>Help reunite pets with their owners by posting sightings with photos and precise location data.</p>
         </div>
         <div class="feature-card">
             <span class="feature-icon">🔔</span>
             <h3>Custom Alerts</h3>
-            <p>Get notified instantly when something is spotted within the radius you choose from your home, from 0 to 50 miles, and know whether it is a threat or not.</p>
+            <p>Get notified instantly when something is spotted within your chosen radius (0 to 50 miles) of your home.</p>
         </div>
     </div>
 </div>
@@ -93,7 +126,6 @@
     <a href="terms.html">Terms of Service</a> | 
     <a href="safety.html">Safety Standards</a>
      <br><br>
-    <!-- ✅ ADDED CONTACT EMAIL -->
     <p style="font-size: 0.9em; opacity: 0.8;">
         Questions? Contact support at: <a href="mailto:dustinbermingham@gmail.com" style="color: #ccc; text-decoration: underline;">dustinbermingham@gmail.com</a>
     </p>
