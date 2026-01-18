@@ -5,31 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- PRIMARY SEO -->
-    <title>Pinwild - Wildlife & Lost Pet Tracking</title>
-    <meta name="description" content="Track wildlife sightings and find lost pets in real-time. Stay safe, stay alert, and help your community.">
+    <title>Pinwild - The Neighborhood Watch for Nature</title>
+    <meta name="description" content="Track wildlife sightings and find lost pets in real-time. Join the neighborhood watch for nature to keep your family and livestock safe.">
     
     <!-- SOCIAL MEDIA PREVIEW -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://pinwild.com">
     <meta property="og:title" content="Pinwild - Wildlife & Lost Pet Alerts">
     <meta property="og:description" content="The neighborhood watch for nature. Track bears, cougars, and lost pets in your backyard.">
-    <meta property="og:image" content="https://pinwild.com/pinsheaderf.png?v=2">
+    <meta property="og:image" content="https://pinwild.com/pinsheaderf.png?v=3">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="Pinwild">
-
-    <!-- TWITTER / X CARDS -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Pinwild - Wildlife & Lost Pet Alerts">
-    <meta name="twitter:description" content="Track wildlife sightings and find lost pets in real-time. Get instant alerts for your area.">
-    <meta name="twitter:image" content="https://pinwild.com/pinsheaderf.png?v=2">
 
     <!-- APP LINKS -->
     <meta property="al:android:url" content="pinwild123://map">
     <meta property="al:android:package" content="com.pinwildapp.app">
     <meta property="al:android:app_name" content="Pinwild">
 
-    <!-- ✅ MODERATOR CLICK FIX: This script makes links clickable in email -->
+    <!-- ✅ MODERATOR CLICK FIX -->
     <script>
       const urlParams = new URLSearchParams(window.location.search);
       const focusDocId = urlParams.get('focusDocId');
@@ -43,21 +37,91 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?v=3">
 
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; }
-        header { background: linear-gradient(135deg, #1b5e20 0%, #43a047 100%); color: white; padding: 60px 20px 80px 20px; text-align: center; }
-        .logo-img { width: 100px; height: 100px; border-radius: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); margin-bottom: 20px; }
-        h1 { margin: 0; font-size: 3em; font-weight: 800; letter-spacing: -1px; }
-        .tagline { font-size: 1.5em; margin-top: 10px; opacity: 0.95; font-weight: 300; }
-        .btn { display: inline-block; background-color: white; color: #2e7d32; padding: 15px 35px; border-radius: 50px; text-decoration: none; font-weight: 800; margin-top: 30px; margin-bottom: 40px; font-size: 1.2em; box-shadow: 0 10px 20px rgba(0,0,0,0.2); transition: transform 0.2s, box-shadow 0.2s; }
-        .btn:hover { background-color: #f1f8e9; transform: translateY(-2px); box-shadow: 0 15px 25px rgba(0,0,0,0.3); }
-        .showcase-img { max-width: 100%; width: 900px; height: auto; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.3); display: block; margin: 0 auto; }
-        .container { max-width: 1000px; margin: 0 auto; padding: 60px 20px; text-align: center; }
-        .features { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 40px; }
-        .feature-card { flex: 1; min-width: 250px; padding: 30px; background: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border: 1px solid #eee;}
-        .feature-icon { font-size: 3em; margin-bottom: 15px; display: block; }
-        footer { background: #1a1a1a; color: #888; padding: 40px 20px; text-align: center; margin-top: 50px; font-size: 0.9em; }
-        footer a { color: #ccc; text-decoration: none; margin: 0 10px; }
-        footer a:hover { color: white; text-decoration: underline; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; background-color: #fcfcfc; }
+        
+        header { 
+            background: linear-gradient(135deg, #1b5e20 0%, #43a047 100%);
+            color: white; 
+            padding: 80px 20px 100px 20px;
+            text-align: center; 
+        }
+        
+        .logo-img { 
+            width: 100px; 
+            height: 100px; 
+            border-radius: 22px; 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            margin-bottom: 25px;
+        }
+
+        h1 { margin: 0; font-size: 3.5em; font-weight: 800; letter-spacing: -1.5px; }
+        .tagline { font-size: 1.8em; margin-top: 10px; opacity: 0.95; font-weight: 300; max-width: 800px; margin-left: auto; margin-right: auto; }
+        
+        .btn { 
+            display: inline-block; 
+            background-color: white; 
+            color: #1b5e20; 
+            padding: 18px 40px; 
+            border-radius: 50px; 
+            text-decoration: none; 
+            font-weight: 700; 
+            margin-top: 40px; 
+            margin-bottom: 60px;
+            font-size: 1.1em; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15); 
+            transition: all 0.3s ease;
+        }
+        .btn:hover { 
+            transform: translateY(-3px); 
+            box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+            background-color: #f9f9f9;
+        }
+        
+        .showcase-img {
+            max-width: 95%;
+            width: 1000px;
+            height: auto;
+            border-radius: 16px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+            display: block;
+            margin: 0 auto;
+        }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 80px 20px; text-align: center; }
+        
+        .section-intro { margin-bottom: 70px; }
+        .section-intro h2 { font-size: 2.5em; font-weight: 800; color: #1b5e20; margin-bottom: 15px; }
+        .section-intro p { font-size: 1.25em; color: #666; max-width: 750px; margin: 0 auto; }
+
+        .features { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 20px; }
+        .feature-card { 
+            flex: 1; 
+            min-width: 320px; 
+            padding: 45px 30px; 
+            background: white; 
+            border-radius: 20px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.04); 
+            border: 1px solid #f0f0f0;
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover { transform: translateY(-5px); }
+        
+        .feature-icon-svg { width: 50px; height: 50px; margin-bottom: 20px; fill: #43a047; }
+        .feature-card h3 { font-size: 1.4em; margin-bottom: 15px; color: #222; }
+        .feature-card p { font-size: 1.05em; color: #555; line-height: 1.7; }
+        
+        .how-it-works { background: #f8f9fa; padding: 80px 20px; border-radius: 40px; margin: 40px 0; }
+        .step-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-top: 40px; }
+        .step { flex: 1; min-width: 250px; }
+        .step-num { font-size: 2em; font-weight: 800; color: #43a047; margin-bottom: 10px; display: block;}
+
+        .trust-banner { padding: 60px 20px; text-align: center; }
+        .trust-banner h4 { font-size: 1.5em; color: #1b5e20; margin-bottom: 15px; }
+
+        footer { background: #121212; color: #999; padding: 60px 20px; text-align: center; margin-top: 100px; font-size: 0.95em; }
+        footer a { color: #eee; text-decoration: none; margin: 0 12px; font-weight: 500; }
+        footer a:hover { color: #43a047; }
+        .footer-logo { opacity: 0.5; width: 40px; margin-bottom: 20px; }
     </style>
 </head>
 <body>
@@ -66,47 +130,85 @@
     <img src="logo.png" alt="Pinwild App Icon" class="logo-img">
     <h1>Pinwild</h1>
     <p class="tagline">The neighborhood watch for nature.</p>
-    <p style="font-size: 1.2em; opacity: 0.9; margin-top: 5px;">Track wildlife sightings and find lost pets in real-time.</p>
-    <a href="https://play.google.com/store/apps/details?id=com.pinwildapp.app" class="btn">Download on Android</a>
-    <img src="pinsheaderf.png" alt="Pinwild App Screenshots" class="showcase-img">
+    <p style="font-size: 1.25em; opacity: 0.95; margin-top: 20px; max-width: 750px; margin-left: auto; margin-right: auto; font-weight: 400;">
+        Real-time community tracking for wildlife sightings and lost pets. Know what's in your backyard before you step outside.
+    </p>
+    
+    <a href="https://play.google.com/store/apps/details?id=com.pinwildapp.app" class="btn">
+        Download for Android
+    </a>
+
+    <img src="pinsheaderf.png" alt="Pinwild App Interface" class="showcase-img">
 </header>
 
 <div class="container">
-    <h2>Know what's in your backyard.</h2>
-    <p style="font-size: 1.1em; color: #555; max-width: 700px; margin: 0 auto;">
-        Pinwild helps keep you, your pets, and your livestock safe while helping you look out for your neighbors. 
-    </p>
+    <div class="section-intro">
+        <h2>Built for Community Safety.</h2>
+        <p>
+            Pinwild turns local knowledge into real-time protection. Stay informed about local predators and help neighbors reunite with missing pets.
+        </p>
+    </div>
 
     <div class="features">
         <div class="feature-card">
-            <span class="feature-icon">🦁</span>
+            <svg class="feature-icon-svg" viewBox="0 0 24 24"><path d="M12,2L4.5,20.29L5.21,21L12,18L18.79,21L19.5,20.29L12,2Z"/></svg>
             <h3>Wildlife Tracking</h3>
-            <p>See where mountain lions, bears, and other wildlife have been spotted recently. Know instantly if they are a threat.</p>
+            <p>Report sightings of bears, cougars, or coyotes. Identify threat levels, direction of travel, and attach photos to alert your community instantly.</p>
         </div>
         <div class="feature-card">
-            <span class="feature-icon">🐕</span>
+            <svg class="feature-icon-svg" viewBox="0 0 24 24"><path d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4A2,2 0 0,0 20,2M20,16H5.17L4,17.17V4H20V16Z"/></svg>
+            <h3>Community Notes</h3>
+            <p>Communication is key. Use the built-in note section on any pin to ask questions or provide live updates on an animal's location.</p>
+        </div>
+        <div class="feature-card">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5 2.5,1.12 2.5,2.5 -1.12,2.5 -2.5,2.5z"/></svg>
             <h3>Lost & Found Pets</h3>
-            <p>Help reunite pets with their owners by posting sightings with photos and precise location data.</p>
+            <p>Help pets get home faster. Drop a precise pin and provide optional contact info so neighbors can reach out the moment a pet is spotted.</p>
         </div>
-        <div class="feature-card">
-            <span class="feature-icon">🔔</span>
-            <h3>Custom Alerts</h3>
-            <p>Get notified instantly when something is spotted within your chosen radius (1 to 50 miles) of your home.</p>
+    </div>
+
+    <div class="how-it-works">
+        <h2>How Pinwild Works</h2>
+        <div class="step-grid">
+            <div class="step">
+                <span class="step-num">1</span>
+                <h3>Drop a Pin</h3>
+                <p>Spotted something? Tap the map to identify the animal and share details with the community.</p>
+            </div>
+            <div class="step">
+                <span class="step-num">2</span>
+                <h3>Set Your Radius</h3>
+                <p>Set a custom alert zone (0-50 miles). You'll only get notified about sightings that affect your home.</p>
+            </div>
+            <div class="step">
+                <span class="step-num">3</span>
+                <h3>Support & Verify</h3>
+                <p>Like pins to confirm sightings or add a note to keep neighbors updated in real-time.</p>
+            </div>
         </div>
+    </div>
+
+    <div class="trust-banner">
+        <h4>Clean. Safe. Transparent.</h4>
+        <p style="color: #666; max-width: 800px; margin: 0 auto; font-size: 1.1em;">
+            Pinwild is 100% free and ad-free. We value your privacy and don't sell your data. To keep the map relevant, dangerous sightings stay for 14 days and non-threats for 7.
+        </p>
     </div>
 </div>
 
 <footer>
-    <p>&copy; 2025 Pinwild. All rights reserved.</p>
+    <img src="logo.png" alt="Pinwild" class="footer-logo">
+    <p>&copy; 2025 Pinwild. The Neighborhood Watch for Nature.</p>
+    <div style="margin-top: 25px;">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="safety.html">Safety</a>
+    </div>
     <br>
-    <a href="privacy.html">Privacy Policy</a> | 
-    <a href="terms.html">Terms of Service</a> | 
-    <a href="safety.html">Safety Standards</a>
-     <br><br>
-    <p style="font-size: 0.9em; opacity: 0.8;">
-        Questions? Contact support at: <a href="mailto:dustinbermingham@gmail.com" style="color: #ccc; text-decoration: underline;">dustinbermingham@gmail.com</a>
+    <p style="font-size: 0.9em; opacity: 0.6;">
+        Support: <a href="mailto:dustinbermingham@gmail.com">dustinbermingham@gmail.com</a>
     </p>
 </footer>
+
 </body>
-</html>
 </html>
