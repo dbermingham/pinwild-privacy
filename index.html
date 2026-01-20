@@ -11,7 +11,7 @@
     <!-- ✅ MATCHED GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
 
     <!-- SOCIAL MEDIA PREVIEW -->
     <meta property="og:type" content="website">
@@ -42,7 +42,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?v=3">
 
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; background-color: #fcfcfc; }
+        body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; background-color: #fcfcfc; }
         
         header { 
             background: linear-gradient(135deg, #1b5e20 0%, #43a047 100%);
@@ -52,52 +52,32 @@
         }
         
         .logo-img { 
-            width: 100px; 
-            height: 100px; 
-            border-radius: 22px; 
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-            margin-bottom: 25px;
+            width: 100px; height: 100px; border-radius: 22px; 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2); margin-bottom: 25px;
         }
 
-        /* ✅ MATCHED LOGO FONT */
         h1 { 
-            margin: 0; 
-            font-family: 'Comfortaa', cursive;
-            font-size: 4.5em; 
-            font-weight: 700; 
-            letter-spacing: -2px; 
+            margin: 0; font-family: 'Comfortaa', cursive; font-size: 4.5em; 
+            font-weight: 700; letter-spacing: -2px; 
         }
 
-        .tagline { font-size: 1.8em; margin-top: 10px; opacity: 0.95; font-weight: 300; max-width: 800px; margin-left: auto; margin-right: auto; }
+        .tagline { 
+            font-size: 1.8em; margin-top: 10px; opacity: 0.95; font-weight: 300; 
+            max-width: 800px; margin-left: auto; margin-right: auto; 
+        }
         
         .btn { 
-            display: inline-block; 
-            background-color: white; 
-            color: #1b5e20; 
-            padding: 18px 40px; 
-            border-radius: 50px; 
-            text-decoration: none; 
-            font-weight: 700; 
-            margin-top: 40px; 
-            margin-bottom: 60px;
-            font-size: 1.1em; 
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15); 
+            display: inline-block; background-color: white; color: #1b5e20; 
+            padding: 18px 40px; border-radius: 50px; text-decoration: none; 
+            font-weight: 700; margin-top: 40px; margin-bottom: 60px;
+            font-size: 1.1em; box-shadow: 0 10px 25px rgba(0,0,0,0.15); 
             transition: all 0.3s ease;
         }
-        .btn:hover { 
-            transform: translateY(-3px); 
-            box-shadow: 0 15px 30px rgba(0,0,0,0.25);
-            background-color: #f9f9f9;
-        }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 15px 30px rgba(0,0,0,0.25); background-color: #f9f9f9; }
         
         .showcase-img {
-            max-width: 95%;
-            width: 1000px;
-            height: auto;
-            border-radius: 16px;
-            box-shadow: 0 30px 60px rgba(0,0,0,0.4);
-            display: block;
-            margin: 0 auto;
+            max-width: 95%; width: 1000px; height: auto; border-radius: 16px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.4); display: block; margin: 0 auto;
         }
 
         .container { max-width: 1100px; margin: 0 auto; padding: 80px 20px; text-align: center; }
@@ -108,14 +88,9 @@
 
         .features { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 20px; }
         .feature-card { 
-            flex: 1; 
-            min-width: 320px; 
-            padding: 45px 30px; 
-            background: white; 
-            border-radius: 20px; 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.04); 
-            border: 1px solid #f0f0f0;
-            transition: transform 0.3s ease;
+            flex: 1; min-width: 320px; padding: 45px 30px; background: white; 
+            border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.04); 
+            border: 1px solid #f0f0f0; transition: transform 0.3s ease;
         }
         .feature-card:hover { transform: translateY(-5px); }
         
@@ -131,10 +106,24 @@
         .trust-banner { padding: 60px 20px; text-align: center; }
         .trust-banner h4 { font-size: 1.5em; color: #1b5e20; margin-bottom: 15px; }
 
-        footer { background: #121212; color: #999; padding: 60px 20px; text-align: center; margin-top: 100px; font-size: 0.95em; }
-        footer a { color: #eee; text-decoration: none; margin: 0 12px; font-weight: 500; }
-        footer a:hover { color: #43a047; }
-        .footer-logo { opacity: 0.5; width: 40px; margin-bottom: 20px; }
+        /* ✅ UPDATED FOOTER */
+        footer { 
+            background: #121212; 
+            color: #f4f4f4; 
+            padding: 80px 20px; 
+            text-align: center; 
+            margin-top: 100px; 
+            font-size: 0.95em; 
+        }
+        .footer-brand {
+            font-family: 'Comfortaa', cursive;
+            font-size: 2em;
+            color: white;
+            display: block;
+            margin-bottom: 10px;
+        }
+        footer a { color: #ffffff; text-decoration: none; margin: 0 12px; font-weight: 600; }
+        footer a:hover { color: #43a047; text-decoration: underline; }
     </style>
 </head>
 <body>
@@ -176,7 +165,7 @@
         <div class="feature-card">
             <svg class="feature-icon-svg" viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5 2.5,1.12 2.5,2.5 -1.12,2.5 -2.5,2.5z"/></svg>
             <h3>Lost & Found Pets</h3>
-            <p>Help pets get home fast and safe. Drop a precise pin and provide optional contact info so neighbors can reach out the moment a pet is lost or found.  Ask questions or provide additional info in Community Notes.</p>
+            <p>Help pets get home fast and safe. Drop a precise pin and provide optional contact info so neighbors can reach out the moment a pet is lost or found. Ask questions or provide additional info in Community Notes.</p>
         </div>
     </div>
 
@@ -191,12 +180,12 @@
             <div class="step">
                 <span class="step-num">2</span>
                 <h3>Set Your Radius</h3>
-                <p>Set a custom alert zone (0-50 miles). You'll only get notified about sightings that affect your home.</p>
+                <p>Set a custom alert zone (1-50 miles). You'll only get notified about sightings that affect your home.</p>
             </div>
             <div class="step">
                 <span class="step-num">3</span>
                 <h3>Support & Verify</h3>
-                <p>Like pins to confirm sightings or add a note to keep neighbors updated in real-time.</p>
+                <p>Like pins to let people know you've seen their sighting or lost/found pet pin or add a note to keep neighbors updated in real-time.</p>
             </div>
         </div>
     </div>
@@ -210,17 +199,18 @@
 </div>
 
 <footer>
-    <img src="logo.png" alt="Pinwild" class="footer-logo">
-    <p>&copy; 2026 Pinwild. The Neighborhood Watch for Nature.</p>
-    <div style="margin-top: 25px;">
+    <!-- ✅ Text-based branding in Comfortaa font -->
+    <span class="footer-brand">Pinwild</span>
+    <p style="margin-bottom: 20px;">The Neighborhood Watch for Nature.</p>
+    <div style="margin-bottom: 30px;">
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
         <a href="safety.html">Safety</a>
     </div>
-    <br>
-    <p style="font-size: 0.9em; opacity: 0.6;">
-        Questions? Email: <a href="mailto:support@pinwild.com">support@pinwild.com</a>
+    <p style="opacity: 0.8;">
+        Support: <a href="mailto:support@pinwild.com" style="margin: 0; color: #43a047;">support@pinwild.com</a>
     </p>
+    <p style="font-size: 0.85em; opacity: 0.4; margin-top: 40px;">&copy; 2026 Pinwild. All rights reserved.</p>
 </footer>
 
 </body>
