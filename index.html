@@ -8,7 +8,7 @@
     <title>Pinwild - The Neighborhood Watch for Nature</title>
     <meta name="description" content="Track wildlife sightings and find lost pets in real-time. Join the neighborhood watch for nature to keep your family, pets and livestock safe.">
     
-    <!-- ✅ GOOGLE FONTS: Comfortaa added for branding -->
+    <!-- ✅ GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
@@ -52,38 +52,39 @@
         }
         
         .logo-img { 
-            width: 100px; 
-            height: 100px; 
-            border-radius: 22px; 
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-            margin-bottom: 25px;
+            width: 100px; height: 100px; border-radius: 22px; 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2); margin-bottom: 25px;
         }
 
-        /* ✅ Comfortaa Font applied to main header */
         h1 { margin: 0; font-family: 'Comfortaa', cursive; font-size: 4.5em; font-weight: 700; letter-spacing: -2px; }
         
         .tagline { font-size: 1.8em; margin-top: 10px; opacity: 0.95; font-weight: 300; max-width: 800px; margin-left: auto; margin-right: auto; }
         
+        /* ✅ UPDATED BUTTON STYLE */
         .btn { 
-            display: inline-block; 
-            background-color: white; 
-            color: #1b5e20; 
-            padding: 18px 40px; 
-            border-radius: 50px; 
+            display: inline-flex;
+            align-items: center;
+            background-color: #000000; /* Black for store look */
+            color: #ffffff; 
+            padding: 12px 30px; 
+            border-radius: 8px; 
             text-decoration: none; 
-            font-weight: 700; 
+            font-weight: 600; 
             margin-top: 40px; 
             margin-bottom: 60px;
             font-size: 1.1em; 
             box-shadow: 0 10px 25px rgba(0,0,0,0.15); 
             transition: all 0.3s ease;
+            border: 1px solid #a0a0a0;
         }
         .btn:hover { 
             transform: translateY(-3px); 
             box-shadow: 0 15px 30px rgba(0,0,0,0.25);
-            background-color: #f9f9f9;
+            background-color: #1a1a1a;
         }
         
+        .play-icon { width: 24px; height: 24px; margin-right: 12px; }
+
         .showcase-img {
             max-width: 95%;
             width: 1000px;
@@ -95,24 +96,17 @@
         }
 
         .container { max-width: 1100px; margin: 0 auto; padding: 80px 20px; text-align: center; }
-        
         .section-intro { margin-bottom: 70px; }
         .section-intro h2 { font-size: 2.5em; font-weight: 800; color: #1b5e20; margin-bottom: 15px; }
         .section-intro p { font-size: 1.25em; color: #666; max-width: 750px; margin: 0 auto; }
 
         .features { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 20px; }
         .feature-card { 
-            flex: 1; 
-            min-width: 320px; 
-            padding: 45px 30px; 
-            background: white; 
-            border-radius: 20px; 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.04); 
-            border: 1px solid #f0f0f0;
-            transition: transform 0.3s ease;
+            flex: 1; min-width: 320px; padding: 45px 30px; background: white; 
+            border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.04); 
+            border: 1px solid #f0f0f0; transition: transform 0.3s ease;
         }
         .feature-card:hover { transform: translateY(-5px); }
-        
         .feature-icon-svg { width: 50px; height: 50px; margin-bottom: 20px; fill: #43a047; }
         .feature-card h3 { font-size: 1.4em; margin-bottom: 15px; color: #222; }
         .feature-card p { font-size: 1.05em; color: #555; line-height: 1.7; }
@@ -125,31 +119,9 @@
         .trust-banner { padding: 60px 20px; text-align: center; }
         .trust-banner h4 { font-size: 1.5em; color: #1b5e20; margin-bottom: 15px; }
 
-        footer { 
-            background: #121212; 
-            color: #f4f4f4; 
-            padding: 80px 20px; 
-            text-align: center; 
-            margin-top: 100px; 
-            font-size: 0.95em; 
-        }
-
-        /* ✅ Comfortaa Font applied to footer name */
-        .footer-brand {
-            font-family: 'Comfortaa', cursive;
-            font-size: 2em;
-            color: white;
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        /* ✅ TM SYMBOL STYLE: Shrinks it and lifts it up */
-        .tm {
-            font-size: 0.5em;
-            vertical-align: super;
-            margin-left: 2px;
-        }
-
+        footer { background: #121212; color: #f4f4f4; padding: 80px 20px; text-align: center; margin-top: 100px; font-size: 0.95em; }
+        .footer-brand { font-family: 'Comfortaa', cursive; font-size: 2em; color: white; display: block; margin-bottom: 10px; }
+        .tm { font-size: 0.5em; vertical-align: super; margin-left: 2px; }
         footer a { color: #ffffff; text-decoration: none; margin: 0 12px; font-weight: 600; }
         footer a:hover { color: #43a047; text-decoration: underline; }
     </style>
@@ -159,14 +131,17 @@
 <header>
     <img src="logo.png" alt="Pinwild App Icon" class="logo-img">
     <h1>Pinwild</h1>
-    <!-- ✅ ADDED SMALL TM SYMBOL TO TAGLINE BELOW -->
     <p class="tagline">The Neighborhood Watch for Nature<span class="tm">&trade;</span></p>
     <p style="font-size: 1.25em; opacity: 0.95; margin-top: 20px; max-width: 750px; margin-left: auto; margin-right: auto; font-weight: 400;">
         Real-time community tracking for wildlife sightings and lost pets. Know what's in your backyard before you step outside.
     </p>
     
+    <!-- ✅ UPDATED GOOGLE PLAY BUTTON -->
     <a href="https://play.google.com/store/apps/details?id=com.pinwildapp.app" class="btn">
-        Download for Android
+        <svg class="play-icon" viewBox="0 0 24 24" fill="white">
+            <path d="M3,20.5V3.5C3,2.9 3.4,2.5 4,2.5C4.2,2.5 4.3,2.5 4.5,2.6L21,11.4C21.4,11.6 21.6,12.1 21.4,12.5C21.3,12.7 21.2,12.8 21,12.9L4.5,21.7C4,22 3.4,21.8 3.1,21.3C3,21.1 3,20.8 3,20.5Z"/>
+        </svg>
+        <span>GET IT ON Google Play</span>
     </a>
 
     <img src="pinsheaderf.png" alt="Pinwild App Interface" class="showcase-img">
